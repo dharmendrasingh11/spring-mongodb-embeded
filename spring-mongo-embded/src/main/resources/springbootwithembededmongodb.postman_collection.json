@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "149ce45b-2ec9-44a3-a953-b6d358517875",
+		"name": "springbootwithembededmongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/product_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 102,\r\n    \"name\": \"dharmendra singh\",\r\n    \"gender\": \"male\",\r\n    \"productList\": [\r\n        {\r\n            \"productId\": 101,\r\n            \"productName\": \"samsung-f41\",\r\n            \"price\": 1500.0\r\n        }\r\n    ],\r\n    \"address\": {\r\n        \"city\": \"gorakhpur\",\r\n        \"state\": \"u.p\",\r\n        \"pincode\": \"27404\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getByName/dharmendra singh",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getByName/dharmendra singh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getByName",
+						"dharmendra singh"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
